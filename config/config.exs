@@ -2,6 +2,8 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
+config :aggregator, ecto_repos: [Aggregator.Repo]
+
 config :aggregator, Aggregator.Repo,
   adapter: Ecto.Adapters.Postgres,
   database: "aggregator_repo",
