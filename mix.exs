@@ -29,8 +29,8 @@ defmodule Aggregator.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:postgrex, ">= 0.0.0"},
-      {:ecto, "~> 1.0"}
+      {:postgrex, "~> 0.13.2"},
+      {:ecto, "~> 2.1.4"}
     ]
   end
 end
