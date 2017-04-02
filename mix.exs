@@ -15,7 +15,10 @@ defmodule Aggregator.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     # Specify extra applications you'll use from Erlang/Elixir
-    [extra_applications: [:logger, :postgrex, :ecto]]
+    [
+      extra_applications: [:logger, :postgrex, :ecto, :aggregator],
+      mod: {Aggregator.Application, []}
+    ]
   end
 
   # Dependencies can be Hex packages:
