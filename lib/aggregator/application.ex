@@ -5,7 +5,7 @@ defmodule Aggregator.Application do
     import Supervisor.Spec, warn: false
 
     children = [
-      worker(Aggregator.Repo, [])
+      supervisor(Aggregator.Repo, [])
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html

@@ -16,7 +16,7 @@ defmodule Aggregator.Mixfile do
   def application do
     # Specify extra applications you'll use from Erlang/Elixir
     [
-      extra_applications: [:logger, :postgrex, :ecto, :aggregator],
+      extra_applications: [:logger, :postgrex, :ecto],
       mod: {Aggregator.Application, []}
     ]
   end
